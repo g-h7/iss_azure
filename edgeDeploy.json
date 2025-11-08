@@ -122,6 +122,9 @@
       "apiVersion": "2021-08-01",
       "name": "[variables('pipName')]",
       "location": "[parameters('location')]",
+      "sku": {
+      "name": "Standard"
+       },
       "properties": {
         "publicIPAllocationMethod": "[variables('publicIPAddressType')]",
         "dnsSettings": {
